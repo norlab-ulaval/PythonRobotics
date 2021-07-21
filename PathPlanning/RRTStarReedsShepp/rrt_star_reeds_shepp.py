@@ -65,8 +65,8 @@ class RRTStarReedsShepp(RRTStar):
         self.connect_circle_dist = connect_circle_dist
 
         self.curvature = 1.0
-        self.goal_yaw_th = np.deg2rad(1.0)
-        self.goal_xy_th = 0.5
+        self.goal_yaw_th = np.deg2rad(360.0)
+        self.goal_xy_th = 0.2
 
     def planning(self, animation=True, search_until_max_iter=True):
         """
